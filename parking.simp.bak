@@ -69,6 +69,16 @@
         <phone-number />
         <description />
         <color>#00000000</color>
+        <working-schedule uid="ws-27a2e172c77a45cdb35329fbff3ff028" hours="8" monday="8" tuesday="8" wednesday="8" thursday="8" friday="8" saturday="0" sunday="0" />
+      </person>
+      <person id="">
+        <first-name />
+        <last-name>Aprendiz</last-name>
+        <role />
+        <e-mail />
+        <phone-number />
+        <description />
+        <color>#00000000</color>
       </person>
     </persons>
     <teams />
@@ -86,33 +96,33 @@
     <custom-types>
       <parameters />
       <types>
-        <type id="Class:f3c01cc5c1ed49e6abff58f8f8b8efd0" name="Pago" class-ref="f3c01cc5c1ed49e6abff58f8f8b8efd0" />
-        <type id="Enum" name="Enum" />
-        <type id="Class:9380d26fd40147c78cd9811c761dc5d6" name="Cliente" class-ref="9380d26fd40147c78cd9811c761dc5d6" />
         <type id="Class:88ed4550bcd141069d777d765d2fe8d3" name="Carro" class-ref="88ed4550bcd141069d777d765d2fe8d3" />
+        <type id="Class:9380d26fd40147c78cd9811c761dc5d6" name="Cliente" class-ref="9380d26fd40147c78cd9811c761dc5d6" />
+        <type id="Class:f3c01cc5c1ed49e6abff58f8f8b8efd0" name="Pago" class-ref="f3c01cc5c1ed49e6abff58f8f8b8efd0" />
         <type id="Class:22f79476d1d044eb802eba17e0237c15" name="Cupo" class-ref="22f79476d1d044eb802eba17e0237c15" />
+        <type id="Enum" name="Enum" />
       </types>
     </custom-types>
   </types>
   <items>
-    <item id="4593d45591d148b186b8ff19da391fa8" cid="PROP019" type="property" name="pertenece" owner="b0a25daec3634adebe14e64263612817" creator="" creation-date="02/12/2024 15:55:08" visibility="private">
-      <structural-feature multiplicity="1..*" type="Pago" type-id="Class:f3c01cc5c1ed49e6abff58f8f8b8efd0" />
-    </item>
-    <item id="0fa3393922254f759b63715a0e9d3411" cid="PROP014" type="property" name="se hace a" owner="464759b414514725b055531b79072d36" creator="" creation-date="02/12/2024 15:47:09" visibility="private">
-      <structural-feature multiplicity="1..*" type="Pago" type-id="Class:f3c01cc5c1ed49e6abff58f8f8b8efd0" />
+    <item id="5c80625f926740218155080ae2130ed5" cid="PROP013" type="property" name="debe estar en" owner="464759b414514725b055531b79072d36" creator="" creation-date="02/12/2024 15:47:09" visibility="private">
+      <structural-feature multiplicity="1" type="Carro" type-id="Class:88ed4550bcd141069d777d765d2fe8d3" />
     </item>
     <item id="136b19cdac7a41518a05863f18180946" cid="PROP018" type="property" name="participa" owner="b0a25daec3634adebe14e64263612817" creator="" creation-date="02/12/2024 15:55:08" visibility="undefined">
       <structural-feature multiplicity="1" type="Cupo" type-id="Class:22f79476d1d044eb802eba17e0237c15" />
     </item>
-    <item id="5e62d7a5c02c44eb8893cba2118c94e2" cid="PROP008" type="property" owner="9865014c6d0e4917a999a9a8b956331b" creator="" creation-date="02/12/2024 15:43:42" visibility="private">
-      <structural-feature type="Cliente" type-id="Class:9380d26fd40147c78cd9811c761dc5d6" />
-      <property aggregation="composite" />
+    <item id="0fa3393922254f759b63715a0e9d3411" cid="PROP014" type="property" name="se hace a" owner="464759b414514725b055531b79072d36" creator="" creation-date="02/12/2024 15:47:09" visibility="private">
+      <structural-feature multiplicity="1..*" type="Pago" type-id="Class:f3c01cc5c1ed49e6abff58f8f8b8efd0" />
     </item>
-    <item id="5c80625f926740218155080ae2130ed5" cid="PROP013" type="property" name="puede estar en" owner="464759b414514725b055531b79072d36" creator="" creation-date="02/12/2024 15:47:09" visibility="private">
-      <structural-feature multiplicity="1" type="Carro" type-id="Class:88ed4550bcd141069d777d765d2fe8d3" />
+    <item id="4593d45591d148b186b8ff19da391fa8" cid="PROP019" type="property" name="pertenece" owner="b0a25daec3634adebe14e64263612817" creator="" creation-date="02/12/2024 15:55:08" visibility="private">
+      <structural-feature multiplicity="1..*" type="Pago" type-id="Class:f3c01cc5c1ed49e6abff58f8f8b8efd0" />
     </item>
     <item id="1e1c4684cda3448393bfbb342e9e607c" cid="PROP009" type="property" owner="9865014c6d0e4917a999a9a8b956331b" creator="" creation-date="02/12/2024 15:43:42" visibility="private">
       <structural-feature multiplicity="1..*" type="Carro" type-id="Class:88ed4550bcd141069d777d765d2fe8d3" />
+    </item>
+    <item id="5e62d7a5c02c44eb8893cba2118c94e2" cid="PROP008" type="property" owner="9865014c6d0e4917a999a9a8b956331b" creator="" creation-date="02/12/2024 15:43:42" visibility="private">
+      <structural-feature type="Cliente" type-id="Class:9380d26fd40147c78cd9811c761dc5d6" />
+      <property aggregation="composite" />
     </item>
   </items>
   <models>
@@ -141,11 +151,25 @@
           </authors>
           <description />
           <creation-date>02/12/2024 15:37:31</creation-date>
-          <change-date>02/19/2024 14:23:16</change-date>
+          <change-date>02/26/2024 13:59:27</change-date>
           <revision-count>0</revision-count>
           <version />
         </meta>
         <abstract-items>
+          <item id="4f5cab4c4f9444b1bbe06245c0542465" cid="PROP004" type="property" name="misCarros" owner="9380d26fd40147c78cd9811c761dc5d6" creator="" creation-date="02/12/2024 15:38:53" visibility="private" />
+          <item id="93a9078fc850415d9571ae42349a93e6" cid="PROP002" type="property" name="apellidos" owner="9380d26fd40147c78cd9811c761dc5d6" creator="" creation-date="02/12/2024 15:38:37" visibility="private">
+            <structural-feature type="String" type-id="Uml.String" />
+          </item>
+          <item id="eb923f516b7c4c52a760bbb275791f03" cid="PROP017" type="property" name="valor" owner="f3c01cc5c1ed49e6abff58f8f8b8efd0" creator="" creation-date="02/12/2024 15:48:44" visibility="private">
+            <structural-feature type="BigReal" type-id="Uml.BigReal" />
+          </item>
+          <item id="b0a25daec3634adebe14e64263612817" cid="REL003" type="relationship" creator="" creation-date="02/12/2024 15:55:08" from="22f79476d1d044eb802eba17e0237c15" to="f3c01cc5c1ed49e6abff58f8f8b8efd0" visibility="package">
+            <owned-items />
+            <relation from="22f79476d1d044eb802eba17e0237c15" to="f3c01cc5c1ed49e6abff58f8f8b8efd0" derived="false">
+              <start-role id="umlar-3ef081e6-e9f7-491d-a847-3ea1e3d58438" name="" navigability="" association-type="association" visibility="private" property-ref="136b19cdac7a41518a05863f18180946" />
+              <end-role id="umlar-f859cf5f-4047-4b05-bdc8-2576e2a556fb" name="" navigability="" association-type="association" visibility="private" property-ref="4593d45591d148b186b8ff19da391fa8" />
+            </relation>
+          </item>
           <item id="88ed4550bcd141069d777d765d2fe8d3" cid="C002" type="class" name="Carro" creator="" creation-date="02/12/2024 15:41:48" visibility="undefined">
             <owned-items />
             <attributes>
@@ -153,45 +177,27 @@
               <attribute id="a76990cfc7f5844a696e32bbb36821442947" cid="PROP007" name="tipoVehiculo" creation-date="02/12/2024 15:42:44" property-ref="7ab31c9eac4448e388ce79716788bb6b" />
             </attributes>
           </item>
-          <item id="b9349437ecd64d378755a51090ce1154" cid="PROP003" type="property" name="numeroIdentificacion" owner="9380d26fd40147c78cd9811c761dc5d6" creator="" creation-date="02/12/2024 15:38:40" visibility="private">
-            <structural-feature type="BigInteger" type-id="Uml.BigInteger" />
-          </item>
-          <item id="22f79476d1d044eb802eba17e0237c15" cid="C003" type="class" name="Cupo" creator="" creation-date="02/12/2024 15:45:09" visibility="undefined">
-            <owned-items />
-            <attributes>
-              <attribute id="a46967195a5904b53abdd1ba91f18506d475" cid="PROP010" name="nombre" creation-date="02/12/2024 15:45:17" property-ref="6169db8a5bce4dbd97acd616ae9acdfb" />
-            </attributes>
-          </item>
-          <item id="9865014c6d0e4917a999a9a8b956331b" cid="REL001" type="relationship" creator="" creation-date="02/12/2024 15:43:42" from="9380d26fd40147c78cd9811c761dc5d6" to="88ed4550bcd141069d777d765d2fe8d3" visibility="package">
-            <owned-items />
-            <relation from="9380d26fd40147c78cd9811c761dc5d6" to="88ed4550bcd141069d777d765d2fe8d3" derived="false">
-              <start-role id="umlar-ac2eddae-94f7-40cf-a751-65dafb608204" name="" navigability="" association-type="composition" visibility="private" property-ref="5e62d7a5c02c44eb8893cba2118c94e2" />
-              <end-role id="umlar-19be0a47-6afe-4b55-90de-7657f503de63" name="" navigability="" association-type="association" visibility="private" property-ref="1e1c4684cda3448393bfbb342e9e607c" />
-            </relation>
-          </item>
-          <item id="6169db8a5bce4dbd97acd616ae9acdfb" cid="PROP010" type="property" name="nombre" owner="22f79476d1d044eb802eba17e0237c15" creator="" creation-date="02/12/2024 15:45:17" visibility="private">
-            <structural-feature type="Char" type-id="Uml.Char" />
-          </item>
-          <item id="9f36eb261f714d549fb3af101b9f2d43" cid="DT001" type="data-type" name="DataType1" creator="" creation-date="02/19/2024 14:23:16" />
-          <item id="eb923f516b7c4c52a760bbb275791f03" cid="PROP017" type="property" name="valor" owner="f3c01cc5c1ed49e6abff58f8f8b8efd0" creator="" creation-date="02/12/2024 15:48:44" visibility="private">
-            <structural-feature type="Integer" type-id="Uml.Integer" />
-          </item>
-          <item id="4c6433819c5347d98d663dd0396fe241" cid="PROP006" type="property" name="placa" owner="88ed4550bcd141069d777d765d2fe8d3" creator="" creation-date="02/12/2024 15:42:01" visibility="private">
-            <structural-feature type="String" type-id="Uml.String" />
-          </item>
-          <item id="4f5cab4c4f9444b1bbe06245c0542465" cid="PROP004" type="property" name="misCarros" owner="9380d26fd40147c78cd9811c761dc5d6" creator="" creation-date="02/12/2024 15:38:53" visibility="private" />
-          <item id="3f03d029850e4f6e9cd6e2a1c3ef2c88" cid="PROP016" type="property" name="fechaHoraFin" owner="f3c01cc5c1ed49e6abff58f8f8b8efd0" creator="" creation-date="02/12/2024 15:48:32" visibility="private">
-            <structural-feature type="DateTime" type-id="Uml.DateTime" />
-          </item>
           <item id="7ab31c9eac4448e388ce79716788bb6b" cid="PROP007" type="property" name="tipoVehiculo" owner="88ed4550bcd141069d777d765d2fe8d3" creator="" creation-date="02/12/2024 15:42:44" visibility="private">
             <structural-feature type="Enum" type-id="Enum" />
           </item>
           <item id="464759b414514725b055531b79072d36" cid="REL002" type="relationship" creator="" creation-date="02/12/2024 15:47:09" from="88ed4550bcd141069d777d765d2fe8d3" to="f3c01cc5c1ed49e6abff58f8f8b8efd0" visibility="package">
             <owned-items />
             <relation from="88ed4550bcd141069d777d765d2fe8d3" to="f3c01cc5c1ed49e6abff58f8f8b8efd0" derived="false">
-              <start-role id="umlar-5e3143a6-12e1-4547-9cb2-26f31ad8b590" name="" navigability="" association-type="association" visibility="private" property-ref="5c80625f926740218155080ae2130ed5" />
-              <end-role id="umlar-859b754b-425d-4792-b13b-399d003b1e27" name="" navigability="" association-type="association" visibility="private" property-ref="0fa3393922254f759b63715a0e9d3411" />
+              <start-role id="umlar-b2772af5-353a-4adb-aca3-bd78dfa7abec" name="" navigability="" association-type="association" visibility="private" property-ref="5c80625f926740218155080ae2130ed5" />
+              <end-role id="umlar-c9dc6143-e27a-4102-9cd4-d613d02d80f4" name="" navigability="" association-type="association" visibility="private" property-ref="0fa3393922254f759b63715a0e9d3411" />
             </relation>
+          </item>
+          <item id="6169db8a5bce4dbd97acd616ae9acdfb" cid="PROP010" type="property" name="nombre" owner="22f79476d1d044eb802eba17e0237c15" creator="" creation-date="02/12/2024 15:45:17" visibility="private">
+            <structural-feature type="Char" type-id="Uml.Char" />
+          </item>
+          <item id="3f03d029850e4f6e9cd6e2a1c3ef2c88" cid="PROP016" type="property" name="fechaHoraFin" owner="f3c01cc5c1ed49e6abff58f8f8b8efd0" creator="" creation-date="02/12/2024 15:48:32" visibility="private">
+            <structural-feature type="DateTime" type-id="Uml.DateTime" />
+          </item>
+          <item id="838a0dac20644e3189cf2d6c6681bd6e" cid="PROP015" type="property" name="fechaHoraInicio" owner="f3c01cc5c1ed49e6abff58f8f8b8efd0" creator="" creation-date="02/12/2024 15:48:03" visibility="private">
+            <structural-feature type="DateTime" type-id="Uml.DateTime" />
+          </item>
+          <item id="4c6433819c5347d98d663dd0396fe241" cid="PROP006" type="property" name="placa" owner="88ed4550bcd141069d777d765d2fe8d3" creator="" creation-date="02/12/2024 15:42:01" visibility="private">
+            <structural-feature type="String" type-id="Uml.String" />
           </item>
           <item id="9380d26fd40147c78cd9811c761dc5d6" cid="C001" type="class" name="Cliente" creator="" creation-date="02/12/2024 15:38:18" visibility="undefined">
             <owned-items />
@@ -205,6 +211,22 @@
               <operation id="ofaa2fb85cfe843508e284490ec4bee51234" cid="OP002" name="addCar" creation-date="02/19/2024 14:28:20" type="" type-id="" visibility="public" />
             </operations>
           </item>
+          <item id="22f79476d1d044eb802eba17e0237c15" cid="C003" type="class" name="Cupo" creator="" creation-date="02/12/2024 15:45:09" visibility="undefined">
+            <owned-items />
+            <attributes>
+              <attribute id="a46967195a5904b53abdd1ba91f18506d475" cid="PROP010" name="nombre" creation-date="02/12/2024 15:45:17" property-ref="6169db8a5bce4dbd97acd616ae9acdfb" />
+            </attributes>
+          </item>
+          <item id="9865014c6d0e4917a999a9a8b956331b" cid="REL001" type="relationship" creator="" creation-date="02/12/2024 15:43:42" from="9380d26fd40147c78cd9811c761dc5d6" to="88ed4550bcd141069d777d765d2fe8d3" visibility="package">
+            <owned-items />
+            <relation from="9380d26fd40147c78cd9811c761dc5d6" to="88ed4550bcd141069d777d765d2fe8d3" derived="false">
+              <start-role id="umlar-2725c00d-e70d-4ec4-a8ab-9f8141fb0c86" name="" navigability="" association-type="composition" visibility="private" property-ref="5e62d7a5c02c44eb8893cba2118c94e2" />
+              <end-role id="umlar-7a19f8c3-aac2-41fa-a137-bf4f94198c3a" name="" navigability="" association-type="association" visibility="private" property-ref="1e1c4684cda3448393bfbb342e9e607c" />
+            </relation>
+          </item>
+          <item id="b9349437ecd64d378755a51090ce1154" cid="PROP003" type="property" name="numeroIdentificacion" owner="9380d26fd40147c78cd9811c761dc5d6" creator="" creation-date="02/12/2024 15:38:40" visibility="private">
+            <structural-feature type="BigInteger" type-id="Uml.BigInteger" />
+          </item>
           <item id="f3c01cc5c1ed49e6abff58f8f8b8efd0" cid="C004" type="class" name="Pago" creator="" creation-date="02/12/2024 15:46:14" visibility="undefined">
             <owned-items />
             <attributes>
@@ -212,19 +234,6 @@
               <attribute id="a7011b80958b94de5a747b0a946d5a073303" cid="PROP016" name="fechaHoraFin" creation-date="02/12/2024 15:48:32" property-ref="3f03d029850e4f6e9cd6e2a1c3ef2c88" />
               <attribute id="a4a0375499eba4ab7a8f2749d737d6d5d620" cid="PROP017" name="valor" creation-date="02/12/2024 15:48:44" property-ref="eb923f516b7c4c52a760bbb275791f03" />
             </attributes>
-          </item>
-          <item id="93a9078fc850415d9571ae42349a93e6" cid="PROP002" type="property" name="apellidos" owner="9380d26fd40147c78cd9811c761dc5d6" creator="" creation-date="02/12/2024 15:38:37" visibility="private">
-            <structural-feature type="String" type-id="Uml.String" />
-          </item>
-          <item id="b0a25daec3634adebe14e64263612817" cid="REL003" type="relationship" creator="" creation-date="02/12/2024 15:55:08" from="22f79476d1d044eb802eba17e0237c15" to="f3c01cc5c1ed49e6abff58f8f8b8efd0" visibility="package">
-            <owned-items />
-            <relation from="22f79476d1d044eb802eba17e0237c15" to="f3c01cc5c1ed49e6abff58f8f8b8efd0" derived="false">
-              <start-role id="umlar-2d270e96-7deb-41be-9bce-b839525cf0bd" name="" navigability="" association-type="association" visibility="private" property-ref="136b19cdac7a41518a05863f18180946" />
-              <end-role id="umlar-29f2afa6-7706-456e-be4b-737c90eea3bd" name="" navigability="" association-type="association" visibility="private" property-ref="4593d45591d148b186b8ff19da391fa8" />
-            </relation>
-          </item>
-          <item id="838a0dac20644e3189cf2d6c6681bd6e" cid="PROP015" type="property" name="fechaHoraInicio" owner="f3c01cc5c1ed49e6abff58f8f8b8efd0" creator="" creation-date="02/12/2024 15:48:03" visibility="private">
-            <structural-feature type="DateTime" type-id="Uml.DateTime" />
           </item>
           <item id="b10dd5192b924f6e916ee343fe777e8b" cid="PROP001" type="property" name="nombre" owner="9380d26fd40147c78cd9811c761dc5d6" creator="" creation-date="02/12/2024 15:38:27" visibility="private">
             <structural-feature type="String" type-id="Uml.String" />
@@ -277,10 +286,6 @@
               </points>
             </layout>
             <relation from="22f79476d1d044eb802eba17e0237c15" from-iid="c53e45f2ddd645eb9ad422c77435f9d9" to="f3c01cc5c1ed49e6abff58f8f8b8efd0" to-iid="a6626b8aadec4edfac987d89b6d4a28c" />
-          </item>
-          <item id="9f36eb261f714d549fb3af101b9f2d43" iid="f5d65358eba34dbab6ad660181ce60d6" creation-date="02/19/2024 14:23:16" order-index="7" type="data-type">
-            <layout ax="66" ay="254" awidth="140" aheight="160" x="66" y="254" width="140" height="160" />
-            <data-type />
           </item>
         </layer>
       </diagram>
