@@ -7,8 +7,12 @@ public class Vehiculo {
     //2.Tipo de del atributo
     //3. Nombre del atributo
 
-    public String placa;
-    public TipoVehiculo tipoVehiculo;
+
+    //los atributos de una clase 
+    //para cumplir con el encapsulamiento 
+    //deben ser privados
+    private String placa;
+    private TipoVehiculo tipoVehiculo;
     //constructor
     //sin parametros: constructor por defecto 
     public Vehiculo() {
@@ -19,8 +23,25 @@ public class Vehiculo {
         this.placa = placa;
         this.tipoVehiculo = tipoVehiculo;
     }
-    
 
+    //getters and setters
+    public String getPlaca() {
+        return placa;
+    }
+
+    public void setPlaca(String placa) {
+        this.placa = placa;
+    }
+
+    public TipoVehiculo getTipoVehiculo() {
+        return tipoVehiculo;
+    }
+
+    public void setTipoVehiculo(TipoVehiculo tipoVehiculo) {
+        this.tipoVehiculo = tipoVehiculo;
+    }
+    
+    
     
 
 }

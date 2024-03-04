@@ -28,6 +28,9 @@ public class Main {
 
         Vehiculo carrito2 = new Vehiculo("GRY 754", TipoVehiculo.MOTO);
         
+        Vehiculo motico = new Vehiculo();
+        motico.setPlaca("XS 449");
+
         //crear(instanciar) un cliente
         Cliente cliente1 = new Cliente("Nicolas","Fandiño Quecan",1031650415L);
         
@@ -72,12 +75,13 @@ public class Main {
         for(Pago p: misPagos){
             //evidencia a mostrar
             //placa del vehiculo - fecha o valor pagado - fecha y hora de inicio y fin - cupo del nombre
-            System.out.print("Pago:|Placa" + p.vehiculo.placa + "|" );
-            System.out.println("|valor: " + p.valor +"|");
-            System.out.println("| fecha y hora entrada:" + p.fechaHoraInicio.toString()+ "|");
-            System.out.println("|fecha y hora salida:"+p.fechaHoraFin.toString() + "|");
-            System.out.println("|Cupo:"+p.cupo.nombre +"|");
-            System.out.println("|Empleado:" +p.empleado.codigo +"|");
+            System.out.print("Pago:|Placa" + p.getVehiculo().getPlaca() + "|" +
+            "|valor: " + p.getValor() +"|"+ 
+            "| fecha y hora entrada:" + p.getFechaHoraFin().toString()+ "|" +
+            "|fecha y hora salida:"+p.getFechaHoraInicio().toString() + "|" +
+            "|Cupo:"+p.getCupo() +"|" + 
+            "|Empleado:" +p.getEmpleado() +"|");
+
         }
 
     }

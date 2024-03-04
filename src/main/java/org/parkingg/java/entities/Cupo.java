@@ -2,7 +2,7 @@ package org.parkingg.java.entities;
 
 public class Cupo {
 
-    public char nombre;
+    private char nombre;
 
     public Cupo() {
     }
@@ -10,6 +10,19 @@ public class Cupo {
     public Cupo(char nombre) {
         this.nombre = nombre;
     }
+
+    //getters and setters
+    public char getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(char nombre) {
+        this.nombre = nombre;
+    }
+
+    
+
+
 
     
 
